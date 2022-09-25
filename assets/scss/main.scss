@@ -473,6 +473,9 @@
 			}
 			.input-group {
 				padding: 74px 44px;
+				@media screen and (max-width: 576px) {
+					padding: 50px 25px;
+				}
 				.text-heading {
 					@include font-bold;
 					@include text-2xl;
