@@ -212,6 +212,11 @@ input:-webkit-autofill:active {
     opacity: 1;
   }
 }
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 25px;
+  }
+}
 .primary-header {
   height: calc(100vh + 200px);
   background-image: url("../images/background/bg-header.webp");
@@ -927,7 +932,6 @@ footer .contact-info .social-media a img {
   -o-transform: translate(calc(50% + 15px), -50%);
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element {
-  padding: 0 28px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 25px 16px;
@@ -942,6 +946,7 @@ footer .contact-info .social-media a img {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   cursor: pointer;
+  object-fit: cover;
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element .featured-image-item:hover img {
   transform: scale(1.05, 1.05);

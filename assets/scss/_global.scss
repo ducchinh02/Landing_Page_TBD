@@ -97,3 +97,8 @@ input:-webkit-autofill:active {
 		opacity: 1;
 	}
 }
+@media screen and (max-width: 576px) {
+	.container {
+		padding: 0 25px;
+	}
+}
