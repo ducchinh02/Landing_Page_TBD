@@ -149,6 +149,8 @@ input:-webkit-autofill:active {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   padding: 10px 0;
+  opacity: 0;
+  transition-delay: calc(var(--index) * 0.05s);
 }
 .quick-action .quick-link-item img {
   object-fit: contain;
@@ -165,9 +167,6 @@ input:-webkit-autofill:active {
   -o-transform: translate(0, 0);
   opacity: 1;
 }
-.quick-action.show .quick-link-item {
-  transition-delay: calc(var(--index) * 0.05s);
-}
 .quick-action.show .quick-link-item img {
   object-fit: cover;
 }
@@ -177,6 +176,7 @@ input:-webkit-autofill:active {
   -moz-transform: translate(0, calc(-100% * var(--index)));
   -ms-transform: translate(0, calc(-100% * var(--index)));
   -o-transform: translate(0, calc(-100% * var(--index)));
+  opacity: 1;
 }
 
 @keyframes scaleEffect {

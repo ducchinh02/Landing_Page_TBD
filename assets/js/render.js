@@ -89,11 +89,7 @@ const socialMeida = [
 const quickLinks = [
 	{
 		link: "#",
-		icon: "./assets/images/icon/youtube-icon.svg",
-	},
-	{
-		link: "#",
-		icon: "./assets/images/icon/twitter.svg",
+		icon: "./assets/images/icon/phone2.svg",
 	},
 	{
 		link: "#",
@@ -101,7 +97,11 @@ const quickLinks = [
 	},
 	{
 		link: "#",
-		icon: "./assets/images/icon/phone2.svg",
+		icon: "./assets/images/icon/twitter.svg",
+	},
+	{
+		link: "#",
+		icon: "./assets/images/icon/youtube-icon.svg",
 	},
 ];
 // about info

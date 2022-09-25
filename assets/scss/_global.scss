@@ -53,6 +53,8 @@ input:-webkit-autofill:active {
 			cursor: pointer;
 			@include transition(0.4s);
 			padding: 10px 0;
+			opacity: 0;
+			transition-delay: calc(var(--index) * 0.05s);
 			img {
 				object-fit: contain;
 			}
@@ -68,7 +70,6 @@ input:-webkit-autofill:active {
 		@include translate(0, 0);
 		opacity: 1;
 		.quick-link-item {
-			transition-delay: calc(var(--index) * 0.05s);
 			img {
 				object-fit: cover;
 			}
@@ -78,6 +79,7 @@ input:-webkit-autofill:active {
 		.quick-link {
 			&-item {
 				@include translate(0, calc(-100% * var(--index)));
+				opacity: 1;
 			}
 		}
 	}
