@@ -956,9 +956,10 @@ footer .contact-info .social-media a img {
 .section-quotes {
   margin-top: 130px;
   background-image: url("../images/background/quotes-bg.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: 5% 0;
   background-repeat: no-repeat;
+  padding-bottom: 140px;
 }
 @media screen and (max-width: 576px) {
   .section-quotes {
@@ -1014,6 +1015,7 @@ footer .contact-info .social-media a img {
 }
 
 #contact {
+  margin-top: 100px;
   margin-bottom: 165px;
   background-image: url("../images/background/bg-contact.png");
   background-size: 100% 100%;
