@@ -167,8 +167,8 @@ const serviceItems = [
 // featured images
 const featuredImages = [
 	[
-		{ image: "./assets/images/featuredImage/featured-1.png" },
 		{ image: "./assets/images/featuredImage/featured-2.png" },
+		{ image: "./assets/images/featuredImage/featured-1.png" },
 		{ image: "./assets/images/featuredImage/featured-3.png" },
 		{ image: "./assets/images/featuredImage/featured-4.png" },
 		{ image: "./assets/images/featuredImage/featured-5.png" },
