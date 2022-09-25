@@ -376,7 +376,7 @@ if (listSocialMedia) {
 if (quickLinkList) {
 	quickLinkList.innerHTML = quickLinks
 		.map((item, index) => {
-			return `<a href="${item.link}" style="--index : ${
+			return `<a href="${item.link}" style="--index : ${index + 1};z-index:-${
 				index + 1
 			}" class="quick-link-item d-flex align-items-center">
 			<img
