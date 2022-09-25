@@ -1,0 +1,67 @@
+@mixin transition($duration) {
+	transition: all $duration ease;
+	-webkit-transition: all $duration ease;
+	-moz-transition: all $duration ease;
+	-o-transition: all $duration ease;
+}
+@mixin font-bold {
+	font-weight: 600;
+}
+@mixin font-medium {
+	font-weight: 500;
+}
+@mixin font-normal {
+	font-weight: 400;
+}
+@mixin section-heading {
+	font-weight: 700;
+	font-size: 42px;
+	color: $primary;
+	padding-top: 30px;
+	@media screen and (max-width: 576px) {
+		font-size: 28px;
+	}
+}
+@mixin section-tag {
+	background: $blue_gradient;
+	color: $white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	@include text-2xl;
+	@include font-bold;
+	text-transform: uppercase;
+	@media screen and (max-width: 576px) {
+		@include text-sm;
+	}
+}
+
+@mixin text-sm {
+	font-size: 14px;
+}
+@mixin text-base {
+	font-size: 16px;
+}
+@mixin text-lg {
+	font-size: 18px;
+}
+@mixin text-xl {
+	font-size: 20px;
+}
+@mixin text-2xl {
+	font-size: 24px;
+}
+
+@mixin translate($x, $y) {
+	transform: translate($x, $y);
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
+}
+@mixin scale($x, $y) {
+	transform: scale($x, $y);
+	-webkit-transform: scale($x, $y);
+	-moz-transform: scale($x, $y);
+	-ms-transform: scale($x, $y);
+	-o-transform: scale($x, $y);
+}

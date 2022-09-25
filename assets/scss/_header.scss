@@ -1,0 +1,220 @@
+.primary-header {
+	height: calc(100vh + 200px);
+	background-image: url("../images/background/bg-header.webp");
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	@media screen and (max-width: 991px) {
+		background-position: 80% 0;
+	}
+	.header-top {
+		@include transition(0.3s);
+		&.active {
+			box-shadow: 0 0 1.6rem rgb(0 0 0 / 15%);
+			background: $white;
+			animation: slideTop 0.5s ease-in-out;
+			.main-navigation {
+				padding: 10px 0;
+				.menu {
+					&-item {
+						.menu-link {
+							color: $primary;
+							&::before {
+								background: $primary_gradient;
+								top: calc(100% + 5px);
+								height: 5px;
+							}
+						}
+					}
+				}
+				.menu-bar {
+					color: $black;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+		z-index: 100;
+		.main-navigation {
+			@include transition(0.3s);
+			padding: 20px 0;
+			.logo {
+				@media screen and (max-width: 676px) {
+					width: 45px;
+				}
+			}
+			.menu {
+				gap: 0 64px;
+				&-item {
+					&.active {
+						.menu-link {
+							&::before {
+								width: 100%;
+								left: 0;
+								right: 0;
+							}
+						}
+					}
+					.menu-link {
+						@include font-bold;
+						@include text-lg;
+						line-height: 21px;
+						color: $white;
+						position: relative;
+						&::before {
+							content: "";
+							position: absolute;
+							width: 0;
+							height: 3px;
+							border-radius: 5px;
+							background-color: $white;
+							top: calc(50% + 30px);
+							left: 50%;
+							right: 50%;
+							@include transition(0.3s);
+						}
+						&:hover::before {
+							width: 100%;
+							left: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+			.menu-bar {
+				color: $white;
+				font-size: 40px;
+				@include transition(0.3s);
+				cursor: pointer;
+			}
+		}
+	}
+	.header-content {
+		color: $white;
+		.text-content {
+			padding: 41px 36px;
+			border-radius: 20px;
+			background: $primary;
+			@media screen and (max-width: 768px) {
+				background-color: transparentize($color: $primary, $amount: 0.4);
+				backdrop-filter: blur(10px);
+				margin-top: 100px;
+			}
+			&-subtitle {
+				font-size: 26px;
+				@media screen and (max-width: 576px) {
+					@include text-xl;
+				}
+			}
+			&-name {
+				padding: 27px 0;
+				font-weight: 700;
+				font-size: 42px;
+				@media screen and (max-width: 576px) {
+					font-size: 30px;
+				}
+			}
+			&-desc {
+				@include font-bold;
+				@include text-xl;
+				@media screen and (max-width: 576px) {
+					@include text-base;
+				}
+			}
+		}
+		.btn-contact {
+			gap: 5px;
+			padding: 19px 28px;
+			background-color: $blue;
+			color: white;
+			margin-top: 47px;
+			border-radius: 100px;
+			@include font-bold;
+			.arrow-icon {
+				@include scale(-1, 1);
+				@include text-xl;
+				@include transition(0.3s);
+			}
+			&:hover {
+				.arrow-icon {
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}
+
+// MENU MOBILE
+.menu-mobile {
+	position: fixed;
+	background-color: $white;
+	max-width: 480px;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: 120;
+	padding: 30px 40px;
+	@include transition(0.3s);
+	@include translate(100%, 0);
+	overflow: hidden;
+	&.active {
+		@include translate(0, 0);
+	}
+	.menu-mobile-header {
+		.logo {
+			width: 50px;
+		}
+		.close-icon {
+			font-size: 35px;
+			@include transition(0.3s);
+			@include scale(-1, 1);
+			cursor: pointer;
+			&:hover {
+				color: $blue_500;
+			}
+		}
+	}
+	.menu-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		padding: 60px 0 40px;
+		@media screen and (max-width: 576px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.menu-item {
+			padding: 14px 16px;
+			border: 2px solid;
+			border-color: $border_gray;
+			border-radius: 10px;
+			text-align: center;
+			@include font-medium;
+			@include transition(0.3s);
+			&:hover,
+			&.active {
+				color: $white;
+				background-color: $primary;
+				border-color: $primary;
+			}
+		}
+	}
+	.quick-link {
+		gap: 30px;
+		&-item {
+			width: 50px;
+			height: 50px;
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+}
+.overlay-menu {
+	position: fixed;
+	z-index: 115;
+	inset: 0;
+	background-color: transparentize($color: $black, $amount: 0.5);
+}
