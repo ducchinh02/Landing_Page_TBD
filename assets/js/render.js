@@ -479,7 +479,7 @@ $(".owl-featured-images").owlCarousel({
 		"<i class='bx bxs-chevron-left'></i>",
 		"<i class='bx bxs-chevron-right'></i>",
 	],
-	autoplay: true,
+	autoplay: false,
 	autoplayTimeout: 3000,
 	autoplayHoverPause: true,
 	responsive: {

@@ -55,3 +55,6 @@ a:hover {
 .owl-carousel.owl-drag .owl-item {
 	user-select: all;
 }
+.owl-item {
+	overflow: hidden;
+}

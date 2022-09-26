@@ -936,6 +936,7 @@ footer .contact-info .social-media a img {
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element .featured-image-item {
   overflow: hidden;
+  height: 300px;
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element .featured-image-item img {
   width: 100%;
