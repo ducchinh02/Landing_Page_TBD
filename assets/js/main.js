@@ -15,6 +15,39 @@ const menuBarToggle = document.querySelector(
 const menuMobile = document.querySelector(".menu-mobile");
 const closeMenuMobile = menuMobile.querySelector(".close-icon");
 const overlayMenu = document.querySelector(".overlay-menu");
+const hyperLinks = document.querySelectorAll(".hyper-link");
+
+// scroll smooth
+const anchorLinkScroll = (link) => {
+	const anchor = link.querySelector("a");
+	anchor.addEventListener("click", function (e) {
+		e.preventDefault();
+		document.querySelector(this.getAttribute("href")).scrollIntoView({
+			behavior: "smooth",
+		});
+	});
+};
+menu_items.forEach((menu) => {
+	anchorLinkScroll(menu);
+});
+hyperLinks.forEach((link) => {
+	link.addEventListener("click", function (e) {
+		e.preventDefault();
+		const sectionView = document.querySelector(this.getAttribute("href"));
+		if (sectionView) {
+			sectionView.scrollIntoView({
+				behavior: "smooth",
+			});
+		} else {
+			window.scroll({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		}
+	});
+});
+// toggle menu mobile
 menuBarToggle.addEventListener("click", () => {
 	menuMobile.classList.add("active");
 	overlayMenu.classList.remove("d-none");
@@ -28,8 +61,9 @@ overlayMenu.addEventListener("click", () => {
 logoMobile.addEventListener("click", () => {
 	onCloseMenu();
 });
-
+// close menu on click menu link
 menu_mobile_items.forEach((menu) => {
+	anchorLinkScroll(menu);
 	menu.addEventListener("click", () => {
 		onCloseMenu();
 	});
@@ -81,10 +115,15 @@ const removeMenuActive = () => {
 	}
 };
 
+let intervalId = 0;
+function scrollStep() {
+	if (window.pageYOffset === 0) {
+		clearInterval(intervalId);
+	}
+	window.scroll(0, window.pageYOffset - 60);
+}
 backToTop.addEventListener("click", () => {
-	window.scroll({
-		top: 0,
-		left: 0,
-		behavior: "smooth",
-	});
+	{
+		intervalId = setInterval(scrollStep, 15);
+	}
 });
