@@ -932,12 +932,14 @@ footer .contact-info .social-media a img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 25px 16px;
+  padding-right: 2px;
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element .featured-image-item {
   overflow: hidden;
 }
 .featured-images .slide-featured .owl-featured-images .slide-group-element .featured-image-item img {
   width: 100%;
+  height: 100%;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;

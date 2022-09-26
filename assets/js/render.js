@@ -167,14 +167,48 @@ const serviceItems = [
 // featured images
 const featuredImages = [
 	[
-		{ image: "./assets/images/featuredImage/featured-2.png" },
-		{ image: "./assets/images/featuredImage/featured-1.png" },
-		{ image: "./assets/images/featuredImage/featured-3.png" },
-		{ image: "./assets/images/featuredImage/featured-4.png" },
-		{ image: "./assets/images/featuredImage/featured-5.png" },
-		{ image: "./assets/images/featuredImage/featured-6.png" },
-		{ image: "./assets/images/featuredImage/featured-7.png" },
-		{ image: "./assets/images/featuredImage/featured-8.png" },
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663931073/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh10_zruedt.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930497/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh5_zjf6vv.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh7_r8nn2s.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh6_us0vor.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh4_phmfxb.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh2_egq2xn.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh1_w7pofq.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh9_ba7tnh.webp",
+		},
+	],
+	[
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh8_jpwlrs.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh3_y7qvcz.webp",
+		},
 	],
 ];
 // quotes
@@ -399,6 +433,7 @@ if (menuMobileList) {
 }
 if (quickLinkListMobile) {
 	quickLinkListMobile.innerHTML = quickLinks
+		.slice(0, 3)
 		.map((item) => {
 			return `<a href="${item.link}" class="quick-link-item d-flex align-items-center">
 		<img
