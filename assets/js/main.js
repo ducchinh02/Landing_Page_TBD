@@ -6,6 +6,7 @@ const menu_items = document.querySelectorAll(
 const menu_mobile_items = document.querySelectorAll(
 	".menu-mobile .menu-list .menu-item"
 );
+const logoMobile = document.querySelector(".menu-mobile .logo");
 const quickAction = document.querySelector(".quick-action");
 const backToTop = quickAction.querySelector(".back-to-top");
 const menuBarToggle = document.querySelector(
@@ -22,6 +23,9 @@ closeMenuMobile.addEventListener("click", () => {
 	onCloseMenu();
 });
 overlayMenu.addEventListener("click", () => {
+	onCloseMenu();
+});
+logoMobile.addEventListener("click", () => {
 	onCloseMenu();
 });
 
