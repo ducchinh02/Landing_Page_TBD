@@ -153,6 +153,9 @@ input:-webkit-autofill:active {
 .quick-action .quick-link-item img {
   object-fit: contain;
 }
+.quick-action .back-to-top {
+  width: 50px;
+}
 .quick-action .back-to-top .arrow-icon {
   z-index: 20;
   cursor: pointer;
@@ -209,11 +212,6 @@ input:-webkit-autofill:active {
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
     opacity: 1;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container {
-    padding: 0 20px;
   }
 }
 .primary-header {
@@ -473,11 +471,16 @@ input:-webkit-autofill:active {
 }
 
 footer {
-  padding: 228px 0;
+  padding: 228px 0 120px;
   background: url("../images/background/footer-bg.png") top left/cover no-repeat;
 }
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 228px 0 50px;
+  }
+}
 footer .row-footer {
-  gap: 30px 0;
+  gap: 50px 0;
 }
 footer .contact-info {
   color: #fff;
@@ -899,6 +902,11 @@ footer .contact-info .social-media a img {
   padding: 80px 44px;
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .featured-images .slide-featured {
+    padding: 80px 15px;
+  }
+}
 .featured-images .slide-featured .owl-featured-images .owl-nav {
   display: block;
 }
@@ -1177,8 +1185,9 @@ footer .contact-info .social-media a img {
   background: rgba(0, 0, 0, 0.5);
 }
 .show-image-container .image-selected {
-  width: 500px;
-  height: 500px;
+  max-width: 600px;
+  width: 100%;
+  height: 450px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -1191,6 +1200,7 @@ footer .contact-info .social-media a img {
   color: #fff;
   font-size: 50px;
   display: flex;
+  cursor: pointer;
 }
 .show-image-container .image-selected .next-image {
   right: 0;
@@ -1211,9 +1221,39 @@ footer .contact-info .social-media a img {
 .show-image-container .image-selected.active {
   animation: scaleAppear 0.3s linear;
 }
+@media screen and (max-width: 676px) {
+  .show-image-container .image-selected {
+    max-width: 550px;
+    height: 400px;
+  }
+}
 @media screen and (max-width: 576px) {
   .show-image-container .image-selected {
-    width: 300px;
+    max-width: 450px;
+    height: 300px;
+  }
+  .show-image-container .image-selected .next-image {
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 80%);
+    -webkit-transform: translate(0, 80%);
+    -moz-transform: translate(0, 80%);
+    -ms-transform: translate(0, 80%);
+    -o-transform: translate(0, 80%);
+  }
+  .show-image-container .image-selected .prev-image {
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 80%);
+    -webkit-transform: translate(0, 80%);
+    -moz-transform: translate(0, 80%);
+    -ms-transform: translate(0, 80%);
+    -o-transform: translate(0, 80%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .show-image-container .image-selected {
+    max-width: 350px;
     height: 300px;
   }
 }

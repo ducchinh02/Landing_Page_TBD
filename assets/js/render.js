@@ -209,6 +209,30 @@ const featuredImages = [
 			image:
 				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh3_y7qvcz.webp",
 		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh7_r8nn2s.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh6_us0vor.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh4_phmfxb.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh2_egq2xn.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh1_w7pofq.webp",
+		},
+		{
+			image:
+				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh9_ba7tnh.webp",
+		},
 	],
 ];
 // quotes

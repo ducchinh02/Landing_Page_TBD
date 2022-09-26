@@ -63,6 +63,7 @@ input:-webkit-autofill:active {
 		}
 	}
 	.back-to-top {
+		width: 50px;
 		.arrow-icon {
 			z-index: 20;
 			cursor: pointer;
@@ -111,10 +112,5 @@ input:-webkit-autofill:active {
 	100% {
 		@include scale(1, 1);
 		opacity: 1;
-	}
-}
-@media screen and (max-width: 576px) {
-	.container {
-		padding: 0 20px;
 	}
 }

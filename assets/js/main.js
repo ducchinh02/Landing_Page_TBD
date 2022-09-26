@@ -25,11 +25,11 @@ overlayMenu.addEventListener("click", () => {
 	onCloseMenu();
 });
 
-menu_mobile_items.forEach((menu)=>{
-	menu.addEventListener('click',()=>{
+menu_mobile_items.forEach((menu) => {
+	menu.addEventListener("click", () => {
 		onCloseMenu();
-	})
-})
+	});
+});
 
 const onCloseMenu = () => {
 	menuMobile.classList.remove("active");

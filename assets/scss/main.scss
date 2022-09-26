@@ -327,6 +327,9 @@
 	}
 	.slide-featured {
 		padding: 80px 44px;
+		@media screen and (max-width: 576px) {
+			padding: 80px 15px;
+		}
 		position: relative;
 		.owl-featured-images {
 			.owl-nav {
@@ -567,8 +570,9 @@
 		background: transparentize($color: $black, $amount: 0.5);
 	}
 	.image-selected {
-		width: 500px;
-		height: 500px;
+		max-width: 600px;
+		width: 100%;
+		height: 450px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 2;
@@ -580,6 +584,7 @@
 			color: $white;
 			font-size: 50px;
 			display: flex;
+			cursor: pointer;
 		}
 		.next-image {
 			right: 0;
@@ -592,8 +597,26 @@
 		&.active {
 			animation: scaleAppear 0.3s linear;
 		}
+		@media screen and (max-width: 676px) {
+			max-width: 550px;
+			height: 400px;
+		}
 		@media screen and (max-width: 576px) {
-			width: 300px;
+			.next-image {
+				bottom: 0;
+				right: 0;
+				@include translate(0, 80%);
+			}
+			.prev-image {
+				bottom: 0;
+				left: 0;
+				@include translate(0, 80%);
+			}
+			max-width: 450px;
+			height: 300px;
+		}
+		@media screen and (max-width: 480px) {
+			max-width: 350px;
 			height: 300px;
 		}
 	}
