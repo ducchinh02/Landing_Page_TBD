@@ -481,7 +481,10 @@ $(".owl-brand").owlCarousel({
 		0: {
 			items: 1,
 		},
-		676: {
+		480: {
+			items: 2,
+		},
+		576: {
 			items: 2,
 		},
 		768: {

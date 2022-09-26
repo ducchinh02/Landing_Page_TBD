@@ -718,6 +718,7 @@ footer .contact-info .social-media a img {
 
 #collab {
   padding-top: 100px;
+  padding-bottom: 50px;
   background-image: url("../images/background/collab-bg.webp");
   background-size: 106% 100%;
   background-position: 5% 0;
@@ -767,6 +768,11 @@ footer .contact-info .social-media a img {
   border-radius: 5px;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  #collab .slide-brand .owl-brand .slide-element .brand-item {
+    padding: 30px 30px;
+  }
+}
 @media screen and (max-width: 576px) {
   #collab .slide-brand .owl-brand .slide-element .brand-item {
     background-color: #fff;
@@ -778,6 +784,11 @@ footer .contact-info .social-media a img {
 #collab .slide-brand .owl-brand .slide-element .brand-item .logo-img img {
   height: 90px;
   object-fit: contain;
+}
+@media screen and (max-width: 480px) {
+  #collab .slide-brand .owl-brand .slide-element .brand-item .logo-img img {
+    height: 110px;
+  }
 }
 #collab .slide-brand .owl-brand .slide-element .brand-item .logo-img .img-filter {
   transition: all 0.3s ease;

@@ -177,6 +177,7 @@
 // COLLAB SECTION
 #collab {
 	padding-top: 100px;
+	padding-bottom: 50px;
 	background-image: url("../images/background/collab-bg.webp");
 	background-size: 106% 100%;
 	background-position: 5% 0;
@@ -212,6 +213,9 @@
 				.brand-item {
 					text-align: center;
 					padding: 15px 30px;
+					@media screen and (max-width: 480px) {
+						padding: 30px 30px;
+					}
 					border: 1px solid transparentize($color: $white, $amount: 0.6);
 					border-radius: 5px;
 					cursor: pointer;
@@ -222,6 +226,9 @@
 						img {
 							height: 90px;
 							object-fit: contain;
+							@media screen and (max-width: 480px) {
+								height: 110px;
+							}
 						}
 						overflow: hidden;
 						.img-filter {
