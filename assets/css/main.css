@@ -597,6 +597,9 @@ footer .contact-info .social-media a img {
   background-repeat: no-repeat;
   padding: 200px 0;
 }
+#about .about-work .work-details {
+  gap: 30px 0;
+}
 #about .about-work .work-details-left {
   color: #fff;
 }
