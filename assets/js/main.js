@@ -25,6 +25,12 @@ overlayMenu.addEventListener("click", () => {
 	onCloseMenu();
 });
 
+menu_mobile_items.forEach((menu)=>{
+	menu.addEventListener('click',()=>{
+		onCloseMenu();
+	})
+})
+
 const onCloseMenu = () => {
 	menuMobile.classList.remove("active");
 	overlayMenu.classList.add("d-none");
