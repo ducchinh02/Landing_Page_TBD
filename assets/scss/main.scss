@@ -328,9 +328,12 @@
 }
 // FEATURED IMAGES
 .featured-images {
-	padding-top: 130px;
+	padding-top: 90px;
 	@media screen and (max-width: 576px) {
 		padding-top: 50px;
+	}
+	.section-heading {
+		padding-top: 0;
 	}
 	.slide-featured {
 		padding: 80px 44px;

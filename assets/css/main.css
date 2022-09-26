@@ -902,12 +902,15 @@ footer .contact-info .social-media a img {
 }
 
 .featured-images {
-  padding-top: 130px;
+  padding-top: 90px;
 }
 @media screen and (max-width: 576px) {
   .featured-images {
     padding-top: 50px;
   }
+}
+.featured-images .section-heading {
+  padding-top: 0;
 }
 .featured-images .slide-featured {
   padding: 80px 44px;

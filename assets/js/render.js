@@ -304,7 +304,12 @@ window.addEventListener("load", () => {
 		distance: "20px",
 		duration: 1000,
 	}).reveal(`#collab`);
-	ScrollReveal().reveal(`.featured-images`, { scale: 0.5 });
+	ScrollReveal({ origin: "bottom", distance: "200px", duration: 1000 }).reveal(
+		`.featured-images .text-center`
+	);
+	ScrollReveal({ origin: "bottom", distance: "200px", duration: 1000 }).reveal(
+		`.featured-images .owl-featured-images`
+	);
 });
 
 // get elements
