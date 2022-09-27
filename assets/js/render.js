@@ -22,52 +22,42 @@ const brandSlide = [
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663938265/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo_clb-180x-01_pszmsd.webp",
-		name: "CLB Doanh nhân trẻ",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663939180/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logoinvest_nwe25f.webp",
-		name: "Invest",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663938248/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logoBNI-01_jtpx8o.webp",
-		name: "BNI",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664011391/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/Smarttech_uomsu5.webp",
-		name: "Smarttech",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664011391/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo_trang_tien_ns5dig.webp",
-		name: "Tràng Tiền",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664095313/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/mb-bank-logo-inkythuatso-01-10-09-01-10-removebg-preview_hvi9rd.webp",
-		name: "MB Bank",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664011391/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo_BRG_Group_mpjrct.webp",
-		name: "BRG Group",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664095311/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo-hai-dang-group-2794-removebg-preview_b2lxs0.webp",
-		name: "Hải Đăng Group",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1664011391/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo_hongha_jlhxrl.webp",
-		name: "Hồng Hà Hotel",
 	},
 	{
 		image:
 			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663938257/bds_tbd/logo%20%C4%90%E1%BB%91i%20t%C3%A1c/logo3mien-01_vmzgep.webp",
-		name: "3M",
 	},
 ];
 // social media
@@ -78,21 +68,21 @@ const socialMeida = [
 	},
 	{
 		icon: "./assets/images/icon/email.svg",
-		link: "#",
+		link: "mailto: duongnt.godland@gmail.com",
 	},
 	{
 		icon: "./assets/images/icon/web.svg",
-		link: "#",
+		link: "http://tbd.com.vn/",
 	},
 ];
 // quick link
 const quickLinks = [
 	{
-		link: "#",
+		link: "tel:0979807989",
 		icon: "./assets/images/icon/phone2.svg",
 	},
 	{
-		link: "#",
+		link: "mailto: duongnt.godland@gmail.com",
 		icon: "./assets/images/icon/email3.svg",
 	},
 	{
@@ -222,14 +212,14 @@ const quotes = [
 // contact list
 const contactDetails = [
 	{
-		icon: "./assets/images/icon/email2.svg",
-		detail: "Duongnt.thaibinhduong@gmail.com",
-	},
-	{ icon: "./assets/images/icon/phone.svg", detail: "097.980.798" },
-	{
 		icon: "./assets/images/icon/location.svg",
 		detail:
-			"Số nhà 5 Liền Kề 1, KDT Xa La, Phường Phúc La, Quận Hà Đông, TP Hà Nội",
+			"Số nhà 5, ngõ 257, phố Thanh Nhàn, Phường Thanh Nhàn, Quận Hai Bà Trưng, Thành phố Hà Nội, Việt Nam",
+	},
+	{ icon: "./assets/images/icon/phone.svg", detail: "Telephone: 0979807989" },
+	{
+		icon: "./assets/images/icon/email2.svg",
+		detail: "Email: duongnt.godland@gmail.com",
 	},
 ];
 const preloader = document.querySelector(".preloader");
@@ -388,18 +378,10 @@ if (owlBrand) {
 						<img
 							src="${slide.image}"
 							alt="${slide.name}"
-							class="img-hover"
-						/>
-						<img
-							class="img-filter"
-							src="${slide.image}"
-							alt="${slide.name}"
+							class="brand image"
 						/>
 					</a>
 				</div>
-			</div>
-			<div class="logo-title">
-				<h4 class="title">${slide.name}</h4>
 			</div>
 		</div>`;
 		})
@@ -451,7 +433,7 @@ if (listContact) {
 if (listSocialMedia) {
 	listSocialMedia.innerHTML = socialMeida
 		.map((item) => {
-			return `<a href="${item.link}" class="social-media-item">
+			return `<a href="${item.link}" target="_blank" class="social-media-item">
 			<img
 				src="${item.icon}"
 				alt="Social media icon"
@@ -464,7 +446,9 @@ if (listSocialMedia) {
 if (quickLinkList) {
 	quickLinkList.innerHTML = quickLinks
 		.map((item, index) => {
-			return `<a href="${item.link}" style="--index : ${index + 1};z-index:-${
+			return `<a href="${item.link}" target="_blank" style="--index : ${
+				index + 1
+			};z-index:-${
 				index + 1
 			}" class="quick-link-item d-flex align-items-center">
 			<img
@@ -509,7 +493,7 @@ $(".owl-brand").owlCarousel({
 	autoplayHoverPause: true,
 	responsive: {
 		0: {
-			items: 1,
+			items: 2,
 		},
 		480: {
 			items: 2,
@@ -524,7 +508,7 @@ $(".owl-brand").owlCarousel({
 			items: 4,
 		},
 		1200: {
-			items: 6,
+			items: 5,
 		},
 	},
 });

@@ -74,7 +74,7 @@
 		background-image: url("../images/background/about-bg.webp");
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		padding: 200px 0;
+		padding: 200px 0 150px;
 		.work-details {
 			gap: 30px 0;
 			&-left {
@@ -182,29 +182,19 @@
 }
 // COLLAB SECTION
 #collab {
-	padding-top: 100px;
-	padding-bottom: 50px;
-	background-image: url("../images/background/collab-bg.webp");
-	background-size: 106% 100%;
-	background-position: 5% 0;
-	background-repeat: no-repeat;
-	@media screen and (max-width: 1200px) {
-		background-size: cover;
-	}
+	padding: 50px 0;
+	background-color: #f8f9fa;
 	& > .text-center {
 		.section-tag {
 			margin-top: 20px;
-			color: $primary !important;
-			background: $white !important;
 		}
 		.section-heading {
-			color: $white !important;
 			@include section-heading;
 		}
 	}
 
 	.slide-brand {
-		padding: 120px 15px 182px;
+		padding: 70px 0 50px;
 		.owl-brand {
 			.owl-nav,
 			.owl-dots {
@@ -218,113 +208,22 @@
 				}
 				.brand-item {
 					text-align: center;
-					padding: 15px 30px;
-					@media screen and (max-width: 480px) {
-						padding: 30px 30px;
-					}
-					border: 1px solid transparentize($color: $white, $amount: 0.6);
+					padding: 15px 20px;
 					border-radius: 5px;
 					cursor: pointer;
-					@media screen and (max-width: 576px) {
-						background-color: $white;
-					}
 					.logo-img {
 						img {
-							height: 90px;
+							height: 130px;
 							object-fit: contain;
 							@media screen and (max-width: 480px) {
-								height: 110px;
+								height: 90px;
 							}
 						}
 						overflow: hidden;
-						.img-filter {
-							@include transition(0.3s);
-							filter: grayscale(100%);
-							@media screen and (max-width: 576px) {
-								filter: grayscale(0);
-							}
-						}
-						.img-hover {
-							position: absolute;
-							z-index: 1;
-							top: 0;
-							left: 0;
-							visibility: hidden;
-							transform: translateY(-100%);
-							transition: 0.3s;
-							@media screen and (max-width: 576px) {
-								display: none;
-							}
-						}
 						a {
 							display: inline-flex;
 							position: relative;
 							overflow: hidden;
-						}
-					}
-					&:hover {
-						border: 1px solid transparentize($color: $white, $amount: 0);
-						background-color: $white;
-					}
-					&:hover {
-						.logo-img {
-							.img-filter {
-								visibility: hidden;
-								@include translate(0, 100%);
-								@media screen and (max-width: 576px) {
-									@include translate(0, 0);
-								}
-							}
-							.img-hover {
-								opacity: 1;
-								visibility: visible;
-								@include translate(0, 0);
-								filter: grayscale(0%);
-							}
-						}
-					}
-				}
-				.logo-title {
-					padding: 30px 0 0;
-					color: $white;
-					position: relative;
-					.title {
-						font-size: 1.125rem;
-						margin: 36px 0 0;
-					}
-					&::before,
-					&::after {
-						content: "";
-						position: absolute;
-						left: 50%;
-						@include translate(-50%, 0);
-					}
-					&::before {
-						top: 0;
-						height: 40px;
-						width: 1px;
-						background-color: transparentize($color: $white, $amount: 0);
-						@include transition(0.3s);
-						@media screen and (max-width: 576px) {
-						}
-					}
-					&::after {
-						top: 40px;
-						border-radius: 50%;
-						height: 12px;
-						width: 12px;
-						background-color: transparentize($color: $white, $amount: 0.6);
-						@include transition(0.3s);
-						@media screen and (max-width: 576px) {
-							background-color: transparentize($color: $white, $amount: 0);
-						}
-					}
-				}
-				&:hover {
-					.logo-title {
-						&.logo-title::before,
-						&.logo-title::after {
-							background-color: transparentize($color: $white, $amount: 0);
 						}
 					}
 				}
@@ -338,12 +237,9 @@
 	@media screen and (max-width: 576px) {
 		padding-top: 50px;
 	}
-	.section-heading {
-		padding-top: 0;
-	}
 	.featured-images-grid {
 		gap: 30px 0;
-		padding: 80px 0;
+		padding: 80px 0 0;
 		.featured-image-item {
 			overflow: hidden;
 			height: 360px;
@@ -370,15 +266,18 @@
 }
 // QUOTES
 .section-quotes {
-	margin-top: 130px;
+	margin: 130px 0;
 	background-image: url("../images/background/quotes-bg.png");
 	background-size: cover;
 	background-position: 5% 0;
 	background-repeat: no-repeat;
 	padding-bottom: 140px;
+	@media screen and (max-width: 576px) {
+		padding-bottom: 0;
+	}
 	overflow: hidden;
 	@media screen and (max-width: 576px) {
-		margin-top: 80px;
+		margin: 80px 0 0;
 	}
 	@media screen and (max-width: 1200px) {
 		background-position: 20% 0;
@@ -391,7 +290,7 @@
 			@media screen and (max-width: 768px) {
 				background-color: transparentize($color: $primary, $amount: 0.4);
 				backdrop-filter: blur(50px);
-				padding: 20px 30px;
+				padding: 20px 10px;
 				border-radius: 20px;
 				margin-top: 100px;
 			}
@@ -428,7 +327,6 @@
 }
 // CONTACT SECTION
 #contact {
-	margin-top: 100px;
 	margin-bottom: 165px;
 	background-image: url("../images/background/bg-contact.png");
 	background-size: 100% 100%;
@@ -437,7 +335,7 @@
 		background-size: cover;
 	}
 	@media screen and (max-width: 576px) {
-		margin-bottom: 80px;
+		margin-bottom: 0;
 	}
 	.container {
 		.form-contact {
@@ -447,7 +345,7 @@
 			border-radius: 12px;
 			overflow: hidden;
 			@media screen and (max-width: 576px) {
-				margin-top: 80px;
+				margin-top: 50px;
 				& .col-lg:first-child {
 					order: 2;
 				}
@@ -494,17 +392,11 @@
 						color: $primary;
 						@include font-bold;
 						@include transition(0.3s);
-						&:focus {
-							border-color: $blue_500;
-							&:invalid {
-								border-color: $red;
-							}
-							&:valid {
-								border-color: $blue_500;
-							}
-						}
 						&::placeholder {
 							@include font-normal;
+						}
+						&:focus {
+							border-color: $blue_500;
 						}
 					}
 					textarea {

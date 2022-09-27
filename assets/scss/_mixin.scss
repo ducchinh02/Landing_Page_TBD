@@ -16,8 +16,9 @@
 @mixin section-heading {
 	font-weight: 700;
 	font-size: 32px;
+	position: relative;
 	color: $primary;
-	padding-top: 30px;
+	padding-top: 15px;
 	@media screen and (max-width: 576px) {
 		font-size: 28px;
 	}

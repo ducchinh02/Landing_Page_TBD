@@ -14,6 +14,24 @@ section,
 }
 .section-heading {
 	@include section-heading;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 80px;
+		background: $primary;
+		bottom: -20px;
+		left: 50%;
+		height: 2px;
+		@include transition(0.5s);
+		@include translate(-50%, 0);
+	}
+}
+.heading-tag {
+	&:hover {
+		.section-heading::before {
+			width: 150px;
+		}
+	}
 }
 @keyframes slideTop {
 	0% {
