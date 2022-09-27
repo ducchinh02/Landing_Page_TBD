@@ -212,13 +212,16 @@ const quotes = [
 // contact list
 const contactDetails = [
 	{
-		icon: "./assets/images/icon/location.svg",
+		icon: "./assets/images/icon/mark_icon_white.svg",
 		detail:
 			"Số nhà 5, ngõ 257, phố Thanh Nhàn, Phường Thanh Nhàn, Quận Hai Bà Trưng, Thành phố Hà Nội, Việt Nam",
 	},
-	{ icon: "./assets/images/icon/phone.svg", detail: "Telephone: 0979807989" },
 	{
-		icon: "./assets/images/icon/email2.svg",
+		icon: "./assets/images/icon/mark_icon_white.svg",
+		detail: "Telephone: 0979807989",
+	},
+	{
+		icon: "./assets/images/icon/mark_icon_white.svg",
 		detail: "Email: duongnt.godland@gmail.com",
 	},
 ];
@@ -340,7 +343,10 @@ if (aboutInfoDetails) {
 	aboutInfoDetails.innerHTML = aboutInfo
 		.map((item) => {
 			return `
-		<li class="details-item">${item.title}:<span> ${item.desc}</span></li>`;
+		<li class="details-item d-flex">
+			<div class="mark-icon"><img src="./assets/images/icon/mark_icon.svg" alt="mark icon"/></div>
+			<div class="text-content flex-grow-1">${item.title}:<span> ${item.desc}</span></div>
+		</li>`;
 		})
 		.join("");
 }
@@ -348,7 +354,10 @@ if (aboutWorkDetails) {
 	aboutWorkDetails.innerHTML = aboutWork
 		.map((item) => {
 			return `
-		<li class="details-item">${item.details}</li>`;
+			<li class="details-item d-flex">
+			<div class="mark-icon"><img src="./assets/images/icon/mark_icon_white.svg" alt="mark icon"/></div>
+			<div class="text-content flex-grow-1">${item.details}</div>
+		</li>`;
 		})
 		.join("");
 }
@@ -415,7 +424,7 @@ if (owlQuotes) {
 if (listContact) {
 	listContact.innerHTML = contactDetails
 		.map((item) => {
-			return `<li class="list-contact-info-item d-flex align-items-center">
+			return `<li class="list-contact-info-item d-flex">
 		<div class="contact-icon">
 			<img
 				src="${item.icon}"

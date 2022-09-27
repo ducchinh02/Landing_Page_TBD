@@ -174,9 +174,9 @@
 			width: 50px;
 		}
 		.close-icon {
-			font-size: 35px;
+			@include text-lg;
+			@include font-bold;
 			@include transition(0.3s);
-			@include scale(-1, 1);
 			cursor: pointer;
 			&:hover {
 				color: $blue_500;
@@ -226,4 +226,7 @@
 	z-index: 115;
 	inset: 0;
 	background-color: transparentize($color: $black, $amount: 0.5);
+	@media screen and (min-width: 991px) {
+		display: none;
+	}
 }

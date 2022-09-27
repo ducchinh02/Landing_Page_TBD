@@ -53,10 +53,22 @@
 				}
 				.about-info-details {
 					padding-top: 55px;
-					list-style-type: disc;
 					color: $primary;
 					@include font-bold;
 					gap: 45px;
+					.mark-icon {
+						width: 24px;
+						height: 24px;
+						margin-right: 10px;
+						img {
+							object-fit: cover;
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.text-content {
+						width: 50%;
+					}
 					@include text-lg;
 					span {
 						@include font-normal;
@@ -83,6 +95,19 @@
 					.text-center {
 						text-align: center !important;
 					}
+				}
+				.mark-icon {
+					width: 24px;
+					height: 24px;
+					margin-right: 10px;
+					img {
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.text-content {
+					width: 50%;
 				}
 				.heading {
 					@include text-2xl;

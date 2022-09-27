@@ -29,6 +29,7 @@ footer {
 				}
 				.contact-details {
 					@include font-medium;
+					width: 50%;
 				}
 			}
 		}
