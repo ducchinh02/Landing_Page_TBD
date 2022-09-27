@@ -133,7 +133,7 @@ input:-webkit-autofill:active {
   object-fit: contain;
 }
 .quick-action .back-to-top {
-  width: 50px;
+  width: 45px;
 }
 .quick-action .back-to-top .arrow-icon {
   z-index: 20;
@@ -502,6 +502,17 @@ footer .contact-info .social-media a {
   align-items: center;
   width: 40px;
   height: 40px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+footer .contact-info .social-media a:hover {
+  transform: translate(0, -10px);
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
 }
 footer .contact-info .social-media a img {
   object-fit: cover;
