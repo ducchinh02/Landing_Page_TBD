@@ -152,88 +152,65 @@ const aboutWork = [
 // services
 const serviceItems = [
 	{
-		image: "./assets/images/services/specialize-1.png",
+		image: "./assets/images/services/specialize-1.webp",
 		name: "Tư vấn đầu tư Bất động sản",
 	},
 	{
-		image: "./assets/images/services/specialize-2.png",
+		image: "./assets/images/services/specialize-2.webp",
 		name: "Tư vấn Thiết kế cảnh quan",
 	},
 	{
-		image: "./assets/images/services/specialize-3.png",
+		image: "./assets/images/services/specialize-3.webp",
 		name: "Tư vấn chăm sóc sức khỏe",
 	},
 ];
 // featured images
 const featuredImages = [
-	[
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663931073/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh10_zruedt.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930497/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh5_zjf6vv.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh7_r8nn2s.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh6_us0vor.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh4_phmfxb.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh2_egq2xn.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh1_w7pofq.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh9_ba7tnh.webp",
-		},
-	],
-	[
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh8_jpwlrs.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh3_y7qvcz.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh7_r8nn2s.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh6_us0vor.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh4_phmfxb.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh2_egq2xn.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh1_w7pofq.webp",
-		},
-		{
-			image:
-				"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh9_ba7tnh.webp",
-		},
-	],
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh1_w7pofq.webp",
+		col_display: "col-lg-3 col-md-4 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh2_egq2xn.webp",
+		col_display: "col-lg-3 col-md-8 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh3_y7qvcz.webp",
+		col_display: "col-lg-6 col-md-8 col-sm-12 ",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh4_phmfxb.webp",
+		col_display: "col-lg-6 col-md-4 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930497/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh5_zjf6vv.webp",
+		col_display: "col-lg-3 col-md-12 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh6_us0vor.webp",
+		col_display: "col-lg-3 col-md-6 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930496/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh7_r8nn2s.webp",
+		col_display: "col-lg-4 col-md-6 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh8_jpwlrs.webp",
+		col_display: "col-lg-4 col-md-6 col-sm-12",
+	},
+	{
+		image:
+			"https://res.cloudinary.com/dlzbwakoc/image/upload/v1663930495/bds_tbd/%E1%BA%A3nh%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng/anh9_ba7tnh.webp",
+		col_display: "col-lg-4 col-md-6 col-sm-12",
+	},
 ];
 // quotes
 const quotes = [
@@ -304,11 +281,18 @@ window.addEventListener("load", () => {
 		distance: "20px",
 		duration: 1000,
 	}).reveal(`#collab`);
-	ScrollReveal({ origin: "bottom", distance: "200px", duration: 1000 }).reveal(
+	ScrollReveal({ origin: "bottom", distance: "300px", duration: 1000 }).reveal(
 		`.featured-images .text-center`
 	);
+	ScrollReveal({ origin: "bottom", distance: "300px", duration: 1000 }).reveal(
+		`.featured-images .featured-images-grid `
+	);
+	ScrollReveal({ origin: "bottom", distance: "150px", duration: 1000 }).reveal(
+		`.section-quotes`
+	);
+	ScrollReveal().reveal(`#contact .form-contact`, { scale: 0.8 });
 	ScrollReveal({ origin: "bottom", distance: "200px", duration: 1000 }).reveal(
-		`.featured-images .owl-featured-images`
+		`footer`
 	);
 });
 
@@ -329,8 +313,8 @@ const owlBrand = document.querySelector("#collab .slide-brand .owl-brand");
 // services thumb
 const servicesGrid = document.querySelector("#services .services-grid");
 // featured images
-const featuredImagesGroup = document.querySelectorAll(
-	".featured-images .owl-featured-images .slide-group-element"
+const featuredImagesGroup = document.querySelector(
+	".featured-images .featured-images-grid"
 );
 // quotes
 const owlQuotes = document.querySelector(
@@ -423,18 +407,18 @@ if (owlBrand) {
 }
 
 if (featuredImagesGroup) {
-	featuredImagesGroup.forEach((group, index) => {
-		group.innerHTML = featuredImages[index]
-			.map((item) => {
-				return `<div class="featured-image-item">
+	featuredImagesGroup.innerHTML = featuredImages
+		.map((item) => {
+			return `<div class="${item.col_display}">
+			<div class="featured-image-item">
 				<img
 					src="${item.image}"
 					alt="featured image"
 				/>
+				</div>
 				</div>`;
-			})
-			.join("");
-	});
+		})
+		.join("");
 }
 
 if (owlQuotes) {
@@ -581,7 +565,7 @@ $(".owl-quotes").owlCarousel({
 	},
 });
 const imageFeaturedItems = document.querySelectorAll(
-	".featured-images .owl-featured-images .featured-image-item img"
+	".featured-images .featured-images-grid  .featured-image-item img"
 );
 
 let currentIndex = 0;
@@ -598,12 +582,11 @@ const prevBtn = imageShow.querySelector(".prev-image");
 const nextBtn = imageShow.querySelector(".next-image");
 
 const showImage = (image) => {
-	imageShow.classList.add("active");
+	showImageContain.classList.add("active");
 	imageShow.style.background = `url('${image}') center / cover no-repeat`;
-	showImageContain.classList.remove("d-none");
 };
 overlay.addEventListener("click", () => {
-	showImageContain.classList.add("d-none");
+	showImageContain.classList.remove("active");
 });
 
 prevBtn.addEventListener("click", () => {

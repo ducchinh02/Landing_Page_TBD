@@ -51,6 +51,7 @@ footer {
 	padding: 20px 15px;
 	background: $primary;
 	color: $white;
+	line-height: 1;
 	@include font-bold;
 	@include text-sm;
 	@media screen and (max-width: 576px) {
