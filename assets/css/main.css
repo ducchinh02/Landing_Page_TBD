@@ -326,7 +326,7 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 576px) {
   .primary-header .header-content .text-content-name {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .primary-header .header-content .text-content-desc {
