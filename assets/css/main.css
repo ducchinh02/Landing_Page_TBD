@@ -1201,6 +1201,10 @@ footer .contact-info .social-media a img {
   font-size: 50px;
   display: flex;
   cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .show-image-container .image-selected .next-image {
   right: 0;
@@ -1210,6 +1214,13 @@ footer .contact-info .social-media a img {
   -ms-transform: translate(100%, -50%);
   -o-transform: translate(100%, -50%);
 }
+.show-image-container .image-selected .next-image:hover {
+  transform: translate(calc(100% + 10px), -50%);
+  -webkit-transform: translate(calc(100% + 10px), -50%);
+  -moz-transform: translate(calc(100% + 10px), -50%);
+  -ms-transform: translate(calc(100% + 10px), -50%);
+  -o-transform: translate(calc(100% + 10px), -50%);
+}
 .show-image-container .image-selected .prev-image {
   transform: translate(-100%, -50%);
   -webkit-transform: translate(-100%, -50%);
@@ -1218,10 +1229,17 @@ footer .contact-info .social-media a img {
   -o-transform: translate(-100%, -50%);
   left: 0;
 }
+.show-image-container .image-selected .prev-image:hover {
+  transform: translate(calc(-100% - 10px), -50%);
+  -webkit-transform: translate(calc(-100% - 10px), -50%);
+  -moz-transform: translate(calc(-100% - 10px), -50%);
+  -ms-transform: translate(calc(-100% - 10px), -50%);
+  -o-transform: translate(calc(-100% - 10px), -50%);
+}
 @media screen and (max-width: 1200px) {
   .show-image-container .image-selected {
     width: 80%;
-    height: 80%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1244,6 +1262,13 @@ footer .contact-info .social-media a img {
     -ms-transform: translate(0, 65%);
     -o-transform: translate(0, 65%);
   }
+  .show-image-container .image-selected .next-image:hover {
+    transform: translate(10px, 65%);
+    -webkit-transform: translate(10px, 65%);
+    -moz-transform: translate(10px, 65%);
+    -ms-transform: translate(10px, 65%);
+    -o-transform: translate(10px, 65%);
+  }
   .show-image-container .image-selected .prev-image {
     bottom: 0;
     left: 0;
@@ -1252,6 +1277,13 @@ footer .contact-info .social-media a img {
     -moz-transform: translate(0, 65%);
     -ms-transform: translate(0, 65%);
     -o-transform: translate(0, 65%);
+  }
+  .show-image-container .image-selected .prev-image:hover {
+    transform: translate(-10px, 65%);
+    -webkit-transform: translate(-10px, 65%);
+    -moz-transform: translate(-10px, 65%);
+    -ms-transform: translate(-10px, 65%);
+    -o-transform: translate(-10px, 65%);
   }
 }
 .show-image-container.active {

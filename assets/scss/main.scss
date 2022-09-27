@@ -580,18 +580,25 @@
 			font-size: 50px;
 			display: flex;
 			cursor: pointer;
+			@include transition(0.3s);
 		}
 		.next-image {
 			right: 0;
 			@include translate(100%, -50%);
+			&:hover {
+				@include translate(calc(100% + 10px), -50%);
+			}
 		}
 		.prev-image {
 			@include translate(-100%, -50%);
 			left: 0;
+			&:hover {
+				@include translate(calc(-100% - 10px), -50%);
+			}
 		}
 		@media screen and (max-width: 1200px) {
 			width: 80%;
-			height: 80%;
+			height: 70%;
 		}
 		@media screen and (max-width: 991px) {
 			width: 80%;
@@ -604,11 +611,17 @@
 				bottom: 0;
 				right: 0;
 				@include translate(0, 65%);
+				&:hover {
+					@include translate(10px, 65%);
+				}
 			}
 			.prev-image {
 				bottom: 0;
 				left: 0;
 				@include translate(0, 65%);
+				&:hover {
+					@include translate(-10px, 65%);
+				}
 			}
 		}
 	}
