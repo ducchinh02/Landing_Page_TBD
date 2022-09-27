@@ -242,6 +242,16 @@ input:-webkit-autofill:active {
   -o-transition: all 0.3s ease;
   padding: 20px 0;
 }
+@media screen and (max-width: 768px) {
+  .primary-header .header-top .main-navigation .logo {
+    height: 45px;
+  }
+}
+.primary-header .header-top .main-navigation .logo img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 .primary-header .header-top .main-navigation .menu {
   gap: 0 64px;
 }
