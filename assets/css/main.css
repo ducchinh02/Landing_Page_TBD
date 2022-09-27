@@ -539,8 +539,15 @@ footer .contact-info .social-media a img {
 #about .about-info .about-thumb {
   position: absolute;
 }
+@media screen and (max-width: 1200px) {
+  #about .about-info .about-thumb {
+    width: 45%;
+    bottom: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   #about .about-info .about-thumb {
+    width: 100%;
     position: relative;
     order: 2;
   }

@@ -12,7 +12,12 @@
 		gap: 50px;
 		.about-thumb {
 			position: absolute;
+			@media screen and (max-width: 1200px) {
+				width: 45%;
+				bottom: 0;
+			}
 			@media screen and (max-width: 1024px) {
+				width: 100%;
 				position: relative;
 				order: 2;
 			}
@@ -27,6 +32,7 @@
 					}
 				}
 				padding-top: 89px;
+
 				@media screen and (max-width: 576px) {
 					padding-top: 30px;
 				}
